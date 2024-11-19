@@ -62,5 +62,22 @@ public class Homework_01 {
         driver.findElement(By.cssSelector("#dialog-notifications-success"));
     }
 
-
+    @Test
+    public void FindElementByXpath() {
+        driver.findElement(By.xpath("//div[@id='mob-menu-button']"));
+        driver.findElement(By.xpath("//div[@class='search-box']"));
+        driver.findElement(By.xpath("//a[@href='http://www.facebook.com/nopCommerce']"));
+        driver.findElement(By.xpath("//h3[contains(text(),'Information')]"));
+        driver.findElement(By.xpath("//h3/parent::*"));
+        driver.findElement(By.xpath("//h3[contains(.,'Follow')]"));
+        driver.findElement(By.xpath("//body"));
+        driver.findElement(By.xpath("//h3/parent::div"));
+        driver.findElement(By.xpath("//input"));
+        driver.findElement(By.xpath("//body/div[4]"));
+        driver.findElement(By.xpath("//input[@id='newsletter-email']"));
+        driver.findElement(By.xpath("//span[@class='close']/parent::div"));
+        driver.findElement(By.xpath("//ul[@class='list']/child::li"));
+        driver.findElement(By.xpath("//div[@class='search-box']/ancestor::div"));
+        driver.findElement(By.xpath("//a[contains(text(), 'Log in')]"));
+    }
 }
