@@ -4,19 +4,19 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class CreateAccountTests extends TestBase{
+public class CreateAccountTests extends TestBase {
     @Test
-    public void newUserRegistrationPositiveTest(){
-        int i = (int)((System.currentTimeMillis()/1000)%3600);
-        click(By.cssSelector("[href='/register']"));
-        type(By.cssSelector("input#FirstName"),"Maria");
-        type(By.cssSelector("input#LastName"),"Müller");
-        type(By.cssSelector("input#Email"),"Müller"+i+"@gmail.com");
-        type(By.cssSelector("input#Password"),"@NpnD!A8gc99u");
-        type(By.cssSelector("input#ConfirmPassword"),"@NpnD!A8gc99u");
-        click(By.cssSelector("input[value='Register']"));
+    public void newUserRegistrationPositiveTest() {
+        int i = (int) ((System.currentTimeMillis() / 1000) % 3600);
+        clickOnRegisterButton();
+        fillRegistrationData(new Contact()
+                .setFirstName("Maria")
+                .setLastName("Müllir")
+                .setEmail("Müleri@gmail.com")
+                .setPassword("@NpnD!A8gc99u")
+                .setConfirmPassword("@NpnD!A8gc99u"));
+        clickRegistrationEnd();
         Assert.assertTrue(isElementPresent(By.cssSelector("input[value='Continue']")));
-
 
     }
 }
