@@ -1,11 +1,8 @@
 package ait.qa49;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -28,8 +25,9 @@ public class TestBase {
     public void tearDown() {
         driver.quit();
     }
-    public boolean isElementPresent(By locator){
-        return driver.findElements(locator).size()>0;
+
+    public boolean isElementPresent(By locator) {
+        return driver.findElements(locator).size() > 0;
     }
 
     public void type(By locator, String text) {
@@ -63,24 +61,24 @@ public class TestBase {
     }
 
     public void LoginAndPassword() {
-        type(By.cssSelector("input#Email"),"Müleri@gmail.com");
-        type(By.cssSelector("input#Password"),"@NpnD!A8gc99u");
+        type(By.cssSelector("input#Email"), "Müleri@gmail.com");
+        type(By.cssSelector("input#Password"), "@NpnD!A8gc99u");
     }
 
     public void ClickLogIn() {
         click(By.cssSelector("[value='Log in']"));
     }
 
-    public boolean isTextPresent(){
-        return isElementPresent(By.cssSelector("a.product-name[href='/141-inch-laptop']"));
+    public boolean isTextPresent() {
+        return isElementPresent(By.xpath("//a[@class='product-name'][contains(text(), '14.1-inch Laptop')]"));
     }
 
     public void clickOnShoppingCartByCssSelector() {
         click(By.cssSelector("span.cart-label"));
     }
 
-    public void clickOnItemByXpath() {
-        click(By.xpath("//body/div[4]/div[1]/div[4]/div[3]/div[1]/div[1]/div[3]/div[3]/div[1]/div[2]/div[3]/div[2]/input[1]"));
+    public void clickOnItemByCss() {
+        click(By.cssSelector(".item-box:nth-child(3) .button-2"));
     }
 
     public boolean isComponentOnMainPagePresent() {

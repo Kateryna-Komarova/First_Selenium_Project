@@ -14,7 +14,7 @@ public class AddItemToCartTests extends TestBase {
 
     @Test
     public void addSecondItemInTheCart() {
-        clickOnItemByXpath();
+        clickOnItemByCss();
         clickOnShoppingCartByCssSelector();
         Assert.assertTrue(isTextPresent());
     }

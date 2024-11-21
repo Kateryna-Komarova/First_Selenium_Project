@@ -12,9 +12,9 @@ public class CreateAccountTests extends TestBase {
         fillRegistrationData(new Contact()
                 .setFirstName("Maria")
                 .setLastName("Müllir")
-                .setEmail("Müleri@gmail.com")
-                .setPassword("@NpnD!A8gc99u")
-                .setConfirmPassword("@NpnD!A8gc99u"));
+                .setEmail("Mülerik@gmail.com")
+                .setPassword("@NpnD!A8gc99uo")
+                .setConfirmPassword("@NpnD!A8gc99uo"));
         clickRegistrationEnd();
         Assert.assertTrue(isElementPresent(By.cssSelector("input[value='Continue']")));
 
