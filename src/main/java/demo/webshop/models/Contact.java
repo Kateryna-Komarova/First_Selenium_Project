@@ -1,4 +1,4 @@
-package ait.qa49;
+package demo.webshop.models;
 
 public class Contact {
     private String firstName;
