@@ -1,8 +1,11 @@
 package ait_qa49;
 
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import java.time.Duration;
 
 public class AddItemToCartTests extends TestBase {
 
@@ -12,7 +15,6 @@ public class AddItemToCartTests extends TestBase {
             app.getContact().clickOnLogoutButton();
         }
     }
-
 
     @BeforeMethod
     public void precondition() {

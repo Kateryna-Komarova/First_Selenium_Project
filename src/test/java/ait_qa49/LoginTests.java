@@ -10,6 +10,7 @@ public class LoginTests extends TestBase {
             app.getContact().clickOnLogoutButton();
         }
     }
+
     @Test(priority = 1)
     public void loginPositiveTest() {
         app.getLogin().clickOnLoginButton();
