@@ -18,6 +18,8 @@ public class AddItemToCartTests extends TestBase {
 
     @BeforeMethod
     public void precondition() {
+
+
         app.getLogin().clickOnLoginButton();
         app.getLogin().LoginAndPassword();
         app.getLogin().ClickLogIn();

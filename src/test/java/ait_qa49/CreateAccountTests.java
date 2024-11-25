@@ -1,5 +1,6 @@
 package ait_qa49;
 
+import demo.webshop.data.NewUserData;
 import demo.webshop.models.Contact;
 import org.openqa.selenium.By;
 import org.testng.Assert;
@@ -20,11 +21,11 @@ public class CreateAccountTests extends TestBase {
         int i = (int) ((System.currentTimeMillis() / 1000) % 3600);
         app.getContact().clickOnRegisterButton();
         app.getContact().fillRegistrationData(new Contact()
-                .setFirstName("Maria")
-                .setLastName("Müllir")
-                .setEmail("Mülertiko@gmail.com")
-                .setPassword("@NpnD!A8gc99uo")
-                .setConfirmPassword("@NpnD!A8gc99uo"));
+                .setFirstName(NewUserData.FirstName)
+                .setLastName(NewUserData.LastName)
+                .setEmail(NewUserData.Email)
+                .setPassword(NewUserData.Password)
+                .setConfirmPassword(NewUserData.ConfirmPassword));
         app.getContact().clickRegistrationEnd();
         Assert.assertTrue(app.getContact().isElementPresent(By.cssSelector("input[value='Continue']")));
 

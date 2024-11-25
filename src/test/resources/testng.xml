@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Demoweb" verbose="1">
+    <test name="Demoweb1">
+        <classes>
+            <class name="ait_qa49.HomePageTests"/>
+        </classes>
+    </test>
+</suite>
