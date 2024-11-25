@@ -5,9 +5,6 @@
         <classes>
             <class name="ait_qa49.HomePageTests"/>
             <class name="ait_qa49.CreateAccountTests">
-                <methods>
-                    <exclude name=".*Positive.*"></exclude>
-                </methods>
             </class>
             <class name="ait_qa49.LoginTests"/>
             <class name="ait_qa49.AddItemToCartTests"/>
