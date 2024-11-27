@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ait_qa49.LoginTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-11-27T14:18:51" hostname="MacBookAir" time="1.289">
+  <properties/>
+  <testcase name="loginPositiveTest" classname="ait_qa49.LoginTests" time="1.289"/>
+  <system-out><![CDATA[15:18:51.805 [Test worker] INFO  ait_qa49.TestBase -- Start test loginPositiveTest
+15:18:51.805 [Test worker] INFO  demo.webshop.utils.MyListener -- Before find elements By.cssSelector: [href='/login']
+15:18:51.805 [Test worker] INFO  demo.webshop.utils.MyListener -- ***********************************************************************
+15:18:51.812 [Test worker] INFO  demo.webshop.utils.MyListener -- List size is 1
+15:18:51.812 [Test worker] INFO  demo.webshop.utils.MyListener -- ***********************************************************************
+15:18:51.812 [Test worker] INFO  ait_qa49.TestBase -- Login with data Müleri@gmail.com ***** @NpnD!A8gc99u
+15:18:51.812 [Test worker] INFO  demo.webshop.utils.MyListener -- The locator will findBy.cssSelector: [href='/login']
+15:18:51.812 [Test worker] INFO  demo.webshop.utils.MyListener -- ***********************************************************************
+15:18:51.820 [Test worker] INFO  demo.webshop.utils.MyListener -- The locator found By.cssSelector: [href='/login']
+15:18:51.820 [Test worker] INFO  demo.webshop.utils.MyListener -- ***********************************************************************
+15:18:52.107 [Test worker] INFO  demo.webshop.utils.MyListener -- The locator will findBy.cssSelector: input#Email
+15:18:52.107 [Test worker] INFO  demo.webshop.utils.MyListener -- ***********************************************************************
+15:18:52.114 [Test worker] INFO  demo.webshop.utils.MyListener -- The locator found By.cssSelector: input#Email
+15:18:52.114 [Test worker] INFO  demo.webshop.utils.MyListener -- ***********************************************************************
+15:18:52.324 [Test worker] INFO  demo.webshop.utils.MyListener -- The locator will findBy.cssSelector: input#Email
+15:18:52.324 [Test worker] INFO  demo.webshop.utils.MyListener -- ***********************************************************************
+15:18:52.337 [Test worker] INFO  demo.webshop.utils.MyListener -- The locator found By.cssSelector: input#Email
+15:18:52.337 [Test worker] INFO  demo.webshop.utils.MyListener -- ***********************************************************************
+15:18:52.342 [Test worker] INFO  demo.webshop.utils.MyListener -- The locator will findBy.cssSelector: input#Email
+15:18:52.342 [Test worker] INFO  demo.webshop.utils.MyListener -- ***********************************************************************
+15:18:52.351 [Test worker] INFO  demo.webshop.utils.MyListener -- The locator found By.cssSelector: input#Email
+15:18:52.351 [Test worker] INFO  demo.webshop.utils.MyListener -- ***********************************************************************
+15:18:52.365 [Test worker] INFO  demo.webshop.utils.MyListener -- The locator will findBy.cssSelector: input#Password
+15:18:52.366 [Test worker] INFO  demo.webshop.utils.MyListener -- ***********************************************************************
+15:18:52.374 [Test worker] INFO  demo.webshop.utils.MyListener -- The locator found By.cssSelector: input#Password
+15:18:52.375 [Test worker] INFO  demo.webshop.utils.MyListener -- ***********************************************************************
+15:18:52.598 [Test worker] INFO  demo.webshop.utils.MyListener -- The locator will findBy.cssSelector: input#Password
+15:18:52.598 [Test worker] INFO  demo.webshop.utils.MyListener -- ***********************************************************************
+15:18:52.613 [Test worker] INFO  demo.webshop.utils.MyListener -- The locator found By.cssSelector: input#Password
+15:18:52.614 [Test worker] INFO  demo.webshop.utils.MyListener -- ***********************************************************************
+15:18:52.618 [Test worker] INFO  demo.webshop.utils.MyListener -- The locator will findBy.cssSelector: input#Password
+15:18:52.618 [Test worker] INFO  demo.webshop.utils.MyListener -- ***********************************************************************
+15:18:52.627 [Test worker] INFO  demo.webshop.utils.MyListener -- The locator found By.cssSelector: input#Password
+15:18:52.627 [Test worker] INFO  demo.webshop.utils.MyListener -- ***********************************************************************
+15:18:52.636 [Test worker] INFO  demo.webshop.utils.MyListener -- The locator will findBy.cssSelector: [value='Log in']
+15:18:52.636 [Test worker] INFO  demo.webshop.utils.MyListener -- ***********************************************************************
+15:18:52.643 [Test worker] INFO  demo.webshop.utils.MyListener -- The locator found By.cssSelector: [value='Log in']
+15:18:52.643 [Test worker] INFO  demo.webshop.utils.MyListener -- ***********************************************************************
+15:18:53.102 [Test worker] INFO  ait_qa49.TestBase -- PASSED: loginPositiveTest
+15:18:53.102 [Test worker] INFO  ait_qa49.TestBase -- Stop test
+15:18:53.102 [Test worker] INFO  ait_qa49.TestBase -- =============================================================================
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

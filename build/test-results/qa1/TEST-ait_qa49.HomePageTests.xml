@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ait_qa49.HomePageTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-11-27T14:18:51" hostname="MacBookAir" time="0.01">
+  <properties/>
+  <testcase name="isHeaderLogoPresentTest" classname="ait_qa49.HomePageTests" time="0.01"/>
+  <system-out><![CDATA[15:18:51.775 [Test worker] INFO  ait_qa49.TestBase -- Start test isHeaderLogoPresentTest
+15:18:51.775 [Test worker] INFO  demo.webshop.utils.MyListener -- Before find elements By.cssSelector: .header-logo
+15:18:51.775 [Test worker] INFO  demo.webshop.utils.MyListener -- ***********************************************************************
+15:18:51.793 [Test worker] INFO  demo.webshop.utils.MyListener -- List size is 1
+15:18:51.793 [Test worker] INFO  demo.webshop.utils.MyListener -- ***********************************************************************
+15:18:51.794 [Test worker] INFO  demo.webshop.utils.MyListener -- Before find elements By.cssSelector: .header-logo
+15:18:51.794 [Test worker] INFO  demo.webshop.utils.MyListener -- ***********************************************************************
+15:18:51.801 [Test worker] INFO  demo.webshop.utils.MyListener -- List size is 1
+15:18:51.802 [Test worker] INFO  demo.webshop.utils.MyListener -- ***********************************************************************
+15:18:51.804 [Test worker] INFO  ait_qa49.TestBase -- PASSED: isHeaderLogoPresentTest
+15:18:51.804 [Test worker] INFO  ait_qa49.TestBase -- Stop test
+15:18:51.804 [Test worker] INFO  ait_qa49.TestBase -- =============================================================================
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

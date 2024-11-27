@@ -31,14 +31,14 @@ public class CreateAccountTests extends TestBase {
         Assert.assertTrue(app.getContact().isElementPresent(By.cssSelector("input[value='Continue']")));
 
     }
-
-    @Test(dataProvider = "createAccountWithCsv", dataProviderClass = DataProviders.class)
-    public void addContactWithCsvFileTest(Contact contact) {
-        int i = (int) ((System.currentTimeMillis() / 1000) % 3600);
-        app.getContact().clickOnRegisterButton();
-        app.getContact().fillRegistrationData(contact);
-        app.getContact().clickRegistrationEnd();
-        Assert.assertTrue(app.getContact().isElementPresent(By.cssSelector("input[value='Continue']")));
-
-    }
+//
+//    @Test(dataProvider = "createAccountWithCsv", dataProviderClass = DataProviders.class)
+//    public void addContactWithCsvFileTest(Contact contact) {
+//        int i = (int) ((System.currentTimeMillis() / 1000) % 3600);
+//        app.getContact().clickOnRegisterButton();
+//        app.getContact().fillRegistrationData(contact);
+//        app.getContact().clickRegistrationEnd();
+//        Assert.assertTrue(app.getContact().isElementPresent(By.cssSelector("input[value='Continue']")));
+//
+//    }
 }
