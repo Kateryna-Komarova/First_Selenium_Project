@@ -17,14 +17,14 @@ public class CreateAccountTests extends TestBase {
         }
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void newUserRegistrationPositiveTest() {
         int i = (int) ((System.currentTimeMillis() / 1000) % 3600);
         app.getContact().clickOnRegisterButton();
         app.getContact().fillRegistrationData(new Contact()
                 .setFirstName(NewUserData.FirstName)
                 .setLastName(NewUserData.LastName)
-                .setEmail(NewUserData.Email)
+                .setEmail("katokom" + i + "@gmail.com")
                 .setPassword(NewUserData.Password)
                 .setConfirmPassword(NewUserData.ConfirmPassword));
         app.getContact().clickRegistrationEnd();
