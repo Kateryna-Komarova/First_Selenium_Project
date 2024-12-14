@@ -21,6 +21,7 @@ public class CreateAccountTests extends TestBase {
     public void newUserRegistrationPositiveTest() {
         int i = (int) ((System.currentTimeMillis() / 1000) % 3600);
         app.getContact().clickOnRegisterButton();
+        app.getContact().pause(1000);
         app.getContact().fillRegistrationData(new Contact()
                 .setFirstName(NewUserData.FirstName)
                 .setLastName(NewUserData.LastName)
@@ -28,7 +29,9 @@ public class CreateAccountTests extends TestBase {
                 .setPassword(NewUserData.Password)
                 .setConfirmPassword(NewUserData.ConfirmPassword));
         app.getContact().clickRegistrationEnd();
-        Assert.assertTrue(app.getContact().isElementPresent(By.cssSelector("input[value='Continue']")));
+        app.getContact().pause(1000);
+        Assert.assertTrue(app.getContact().isContinuePresent());
+        //isElementPresent(By.cssSelector("input[value='Continue']")));
 
     }
 //

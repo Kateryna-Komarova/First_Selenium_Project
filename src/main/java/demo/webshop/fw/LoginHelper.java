@@ -22,6 +22,7 @@ public class LoginHelper extends BaseHelper {
     }
 
     public boolean isLoginButtonPresent() {
+        pause(1000);
         return isElementPresent(By.cssSelector("[href='/login']"));
     }
 }

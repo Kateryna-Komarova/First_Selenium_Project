@@ -14,12 +14,6 @@ public class AddItemToCartTests extends TestBase {
         if (!app.getLogin().isLoginButtonPresent()) {
             app.getContact().clickOnLogoutButton();
         }
-    }
-
-    @BeforeMethod
-    public void precondition() {
-
-
         app.getLogin().clickOnLoginButton();
         app.getLogin().LoginAndPassword();
         app.getLogin().ClickLogIn();
@@ -28,7 +22,9 @@ public class AddItemToCartTests extends TestBase {
     @Test
     public void addSecondItemInTheCart() {
         app.getAdd().clickOnItemByCss();
-        app.getAdd().clickOnShoppingCartByCssSelector();
+        app.getAdd().pause(1000);
+        app.getAdd().clickOnCart();
+        //clickOnShoppingCartByCssSelector();
         Assert.assertTrue(app.getAdd().isTextPresent());
     }
 }

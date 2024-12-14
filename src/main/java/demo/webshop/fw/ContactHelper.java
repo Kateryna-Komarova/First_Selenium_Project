@@ -32,4 +32,9 @@ public class ContactHelper extends BaseHelper {
     public void clickOnLogoutButton() {
         click(By.xpath("//a[contains(text(),'Log out')]"));
     }
+
+    public boolean isContinuePresent() {
+        pause(1000);
+        return isElementPresent(By.cssSelector("input[value='Continue']"));
+    }
 }

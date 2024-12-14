@@ -9,12 +9,14 @@ public class LoginTests extends TestBase {
     public void ensurePrecondition() {
         if (!app.getLogin().isLoginButtonPresent()) {
             app.getContact().clickOnLogoutButton();
+            app.getLogin().pause(2000);
         }
     }
 
     @Test(priority = 1)
     public void loginPositiveTest() {
         logger.info("Login with data " + ExistingUser.Email + " ***** " + ExistingUser.Password );
+        app.getLogin().pause(2000);
         app.getLogin().clickOnLoginButton();
         app.getLogin().LoginAndPassword();
         app.getLogin().ClickLogIn();

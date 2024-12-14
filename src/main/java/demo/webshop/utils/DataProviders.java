@@ -15,7 +15,7 @@ public class DataProviders {
     @DataProvider
     public Iterator<Object[]> createAccountWithCsv() throws IOException {
         List<Object[]> list = new ArrayList<>();
-        BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/ContactData.csv")));
+        BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/ContactData3.csv")));
 
         String line = reader.readLine();
 
